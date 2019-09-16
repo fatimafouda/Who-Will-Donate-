@@ -1,8 +1,9 @@
 # Finding Donors for CharityML
 
-This project is part of the **Udacity Data Science Nanodegree**
+This project is part of the **Udacity Data Science Nanodegree**. <br>
+The goal with this implementation is to construct a model that accurately predicts whether an individual makes more than $50,000. Individuals making more than $50k are more liekly to donate.
 
-# Data:
+## Data:
 
 The modified census dataset consists of approximately 32,000 data points, with each datapoint having 13 features. This dataset is a modified version of the dataset published in the paper *"Scaling Up the Accuracy of Naive-Bayes Classifiers: a Decision-Tree Hybrid",* by Ron Kohavi. You may find this paper [online](https://www.aaai.org/Papers/KDD/1996/KDD96-033.pdf), with the original dataset hosted on [UCI](https://archive.ics.uci.edu/ml/datasets/Census+Income).
 
@@ -24,5 +25,16 @@ The modified census dataset consists of approximately 32,000 data points, with e
 **Target Variable**
 - `income`: Income Class (<=50K, >50K)
 
-# Steps:
-1. 
+## Steps:
+1. Preprocessing
+     - Transforming skewed continuous features
+     - Normalizing numerical features
+     - One-hot encoding categorical features
+2. Shuffle and split data
+3. Compare Naive Predictor model performance against:
+     - Adaboost
+     - Support Vector Machines (SVM)
+     - Logistic Regression
+4. Model tuning:
+     - GridSearch
+     - Feature Selection
